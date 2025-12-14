@@ -23,4 +23,12 @@ window.addEventListener("load", function () {
       fire.style.animation = "fireZoom 1s ease-in forwards";
     }
   }, totalLeafDelay);
+
+  // Redirect to signin page after all animations complete
+  const fireAnimationDuration = 1000; // Fire animation is 1s
+  const totalAnimationTime = totalLeafDelay + fireAnimationDuration;
+  
+  setTimeout(() => {
+    window.location.href = "signin.html";
+  }, totalAnimationTime);
 });
