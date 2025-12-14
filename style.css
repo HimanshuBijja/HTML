@@ -26,7 +26,15 @@ svg {
   }
   45% {
     opacity: 0.45;
+    transform: scale(15);
+  }
+  65% {
+    opacity: 0.25;
     transform: scale(30);
+  }
+  85% {
+    opacity: 0.1;
+    transform: scale(70);
   }
   100% {
     opacity: 0;

@@ -14,18 +14,18 @@ window.addEventListener("load", function () {
   }
 
   // After all leaves are animated, animate fire group
-  const totalLeafDelay = 30 * 50 + 400; // All leaves delay + last animation duration
+  const totalLeafDelay = 30 * 50 + 200; // All leaves delay + last animation duration
   
   setTimeout(() => {
     const fire = document.getElementById("fire");
     
     if (fire) {
-      fire.style.animation = "fireZoom 1s ease-in forwards";
+      fire.style.animation = "fireZoom 1.2s ease-in forwards";
     }
   }, totalLeafDelay);
 
   // Redirect to signin page after all animations complete
-  const fireAnimationDuration = 1000; // Fire animation is 1s
+  const fireAnimationDuration = 1500; // Fire animation is 1s
   const totalAnimationTime = totalLeafDelay + fireAnimationDuration;
   
   setTimeout(() => {
