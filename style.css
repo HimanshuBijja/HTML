@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hide all leaves initially */
+[id^="leaf-"] {
+  opacity: 0;
+}
