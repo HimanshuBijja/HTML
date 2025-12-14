@@ -5,17 +5,12 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  width: 100vw;
   background: #000;
-  overflow: hidden;
 }
 
 svg {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Hide all leaves initially */
