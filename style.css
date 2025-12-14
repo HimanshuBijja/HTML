@@ -17,3 +17,27 @@ svg {
 [id^="leaf-"] {
   opacity: 0;
 }
+
+/* Keyframe animation for fire group */
+@keyframes fireZoom {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  45% {
+    opacity: 0.45;
+    transform: scale(30);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(100);
+  }
+}
+
+/* Fire group initial state */
+#fire {
+  opacity: 1;
+  transform-box: fill-box;
+  transform-origin: center center;
+  transform: scale(1);
+}
